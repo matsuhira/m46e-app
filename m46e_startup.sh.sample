@@ -1,0 +1,45 @@
+#!/bin/bash
+###############################################################################
+# M46Eアプリスタートアップスクリプトサンプル
+# アプリ起動時にメインループ突入前に下記の引数を伴って呼ばれる。
+#
+#   ・Plane名
+#       --> 設定ファイルの[device] plane_nameの値
+#   ・ネットワーク空間(bb | stub)
+#       --> どちらのネットワーク空間からこのスクリプトが起動されているか
+#   ・トンネルモード
+#       --> 設定ファイルの[device] tunnel_modeの値
+#   ・unicast plane prefix
+#       --> 設定ファイルの[device] m46e_unicast_prefixとplane_idを連結させた値
+#   ・multicast plane prefix
+#       --> 設定ファイルの[device] m46e_multicast_prefixとplane_idを連結させた値
+#   ・トンネルデバイス名
+#       --> 設定ファイルの[tunnel] tunnel_nameの値
+#
+# これらの値を使用して、staticな経路の追加や、M46Eの起動と共に実行させたい
+# アプリケーションの起動など、必要な処理を記述すること。
+###############################################################################
+
+# 引数の展開
+plane_name=$1
+nw_type=$2
+tunnel_mode=$3
+unicast_prefix=$4
+multicast_prefix=$5
+tunnel_name=$6
+
+# Stub側の処理を追加する場合は、以下のif文の
+# コメントアウトを削除してif文内に処理を追加する
+#if [ $nw_type = "stub" ]
+#then
+#    # Stub側ネットワークの処理
+#fi
+
+# Backbone側の処理を追加する場合は、以下のif文の
+# コメントアウトを削除してif文内に処理を追加する
+#if [ $nw_type = "bb" ]
+#then
+#    # Backbone側ネットワークの処理
+#fi
+
+exit 0
