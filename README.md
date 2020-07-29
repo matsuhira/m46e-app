@@ -33,4 +33,4 @@ m46e-pr also knows as sa46t-pr.<br>
 https://tools.ietf.org/html/draft-matsuhira-sa46t-pr
 
 ## contact
-matsuhira@jp.fujitsu.com
+m46-me6-mslb-contact@googlegroups.com
