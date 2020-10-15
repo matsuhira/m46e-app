@@ -32,5 +32,10 @@ https://tools.ietf.org/html/draft-matsuhira-sa46t<br>
 m46e-pr also knows as sa46t-pr.<br>
 https://tools.ietf.org/html/draft-matsuhira-sa46t-pr
 
+## Compile
+% git clone git://github.com/matsuhira/m46e-app.git<br>
+% cd m46e-app<br>
+% make<br>
+
 ## contact
 m46-me6-mslb-contact@googlegroups.com
